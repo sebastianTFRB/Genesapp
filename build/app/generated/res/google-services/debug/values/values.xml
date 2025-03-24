@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">880621036129-j3tdpnhn944vkf68j8h8hesdohh2bkfn.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">880621036129</string>
+    <string name="google_api_key" translatable="false">AIzaSyAzY-o8Fk3oEeYe0TEO7j-KV0cR3yGQtKM</string>
+    <string name="google_app_id" translatable="false">1:880621036129:android:a97382f11a5e63383bc020</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAzY-o8Fk3oEeYe0TEO7j-KV0cR3yGQtKM</string>
+    <string name="google_storage_bucket" translatable="false">genesapp-960d8.firebasestorage.app</string>
+    <string name="project_id" translatable="false">genesapp-960d8</string>
+</resources>

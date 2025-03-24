@@ -1,0 +1,432 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.genesapp"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+9        android:targetSdkVersion="35" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Users\ASUS TUF\Desktop\genesapp\android\app\src\debug\AndroidManifest.xml:6:5-66
+15-->C:\Users\ASUS TUF\Desktop\genesapp\android\app\src\debug\AndroidManifest.xml:6:22-64
+16    <!-- Permisos para lectura de archivos -->
+17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+17-->C:\Users\ASUS TUF\Desktop\genesapp\android\app\src\main\AndroidManifest.xml:5:5-79
+17-->C:\Users\ASUS TUF\Desktop\genesapp\android\app\src\main\AndroidManifest.xml:5:22-77
+18    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+18-->C:\Users\ASUS TUF\Desktop\genesapp\android\app\src\main\AndroidManifest.xml:6:5-76
+18-->C:\Users\ASUS TUF\Desktop\genesapp\android\app\src\main\AndroidManifest.xml:6:22-73
+19    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+19-->C:\Users\ASUS TUF\Desktop\genesapp\android\app\src\main\AndroidManifest.xml:7:5-75
+19-->C:\Users\ASUS TUF\Desktop\genesapp\android\app\src\main\AndroidManifest.xml:7:22-72
+20    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" /> <!-- Visibilidad para procesadores de texto -->
+20-->C:\Users\ASUS TUF\Desktop\genesapp\android\app\src\main\AndroidManifest.xml:8:5-75
+20-->C:\Users\ASUS TUF\Desktop\genesapp\android\app\src\main\AndroidManifest.xml:8:22-72
+21    <queries>
+21-->C:\Users\ASUS TUF\Desktop\genesapp\android\app\src\main\AndroidManifest.xml:46:5-51:15
+22        <intent>
+22-->C:\Users\ASUS TUF\Desktop\genesapp\android\app\src\main\AndroidManifest.xml:47:9-50:18
+23            <action android:name="android.intent.action.PROCESS_TEXT" />
+23-->C:\Users\ASUS TUF\Desktop\genesapp\android\app\src\main\AndroidManifest.xml:48:13-72
+23-->C:\Users\ASUS TUF\Desktop\genesapp\android\app\src\main\AndroidManifest.xml:48:21-70
+24
+25            <data android:mimeType="text/plain" />
+25-->C:\Users\ASUS TUF\Desktop\genesapp\android\app\src\main\AndroidManifest.xml:49:13-50
+25-->C:\Users\ASUS TUF\Desktop\genesapp\android\app\src\main\AndroidManifest.xml:49:19-48
+26        </intent>
+27        <intent>
+27-->[:file_picker] C:\Users\ASUS TUF\Desktop\genesapp\build\file_picker\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:9-12:18
+28            <action android:name="android.intent.action.GET_CONTENT" />
+28-->[:file_picker] C:\Users\ASUS TUF\Desktop\genesapp\build\file_picker\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:13-72
+28-->[:file_picker] C:\Users\ASUS TUF\Desktop\genesapp\build\file_picker\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:21-69
+29
+30            <data android:mimeType="*/*" />
+30-->C:\Users\ASUS TUF\Desktop\genesapp\android\app\src\main\AndroidManifest.xml:49:13-50
+30-->C:\Users\ASUS TUF\Desktop\genesapp\android\app\src\main\AndroidManifest.xml:49:19-48
+31        </intent>
+32    </queries>
+33
+34    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+34-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:26:5-79
+34-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:26:22-76
+35    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+35-->[com.google.android.recaptcha:recaptcha:18.6.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\b30855fc5bcae3708a9789da577ab566\transformed\jetified-recaptcha-18.6.1\AndroidManifest.xml:9:5-98
+35-->[com.google.android.recaptcha:recaptcha:18.6.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\b30855fc5bcae3708a9789da577ab566\transformed\jetified-recaptcha-18.6.1\AndroidManifest.xml:9:22-95
+36
+37    <permission
+37-->[androidx.core:core:1.13.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\a5fbb50faaefa696ca493c882c2b3bd6\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+38        android:name="com.example.genesapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+38-->[androidx.core:core:1.13.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\a5fbb50faaefa696ca493c882c2b3bd6\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+39        android:protectionLevel="signature" />
+39-->[androidx.core:core:1.13.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\a5fbb50faaefa696ca493c882c2b3bd6\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+40
+41    <uses-permission android:name="com.example.genesapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+41-->[androidx.core:core:1.13.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\a5fbb50faaefa696ca493c882c2b3bd6\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+41-->[androidx.core:core:1.13.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\a5fbb50faaefa696ca493c882c2b3bd6\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+42
+43    <application
+44        android:name="android.app.Application"
+45        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+45-->[androidx.core:core:1.13.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\a5fbb50faaefa696ca493c882c2b3bd6\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+46        android:debuggable="true"
+47        android:extractNativeLibs="false"
+48        android:icon="@mipmap/ic_launcher"
+49        android:label="genesapp"
+50        android:requestLegacyExternalStorage="true" >
+51        <activity
+52            android:name="com.example.genesapp.MainActivity"
+53            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+54            android:exported="true"
+55            android:hardwareAccelerated="true"
+56            android:launchMode="singleTop"
+57            android:taskAffinity=""
+58            android:theme="@style/LaunchTheme"
+59            android:windowSoftInputMode="adjustResize" >
+60
+61            <!-- Tema mientras carga Flutter -->
+62            <meta-data
+63                android:name="io.flutter.embedding.android.NormalTheme"
+64                android:resource="@style/NormalTheme" />
+65
+66            <!-- Filtro para indicar la actividad de inicio -->
+67            <intent-filter>
+68                <action android:name="android.intent.action.MAIN" />
+69
+70                <category android:name="android.intent.category.LAUNCHER" />
+71            </intent-filter>
+72        </activity>
+73
+74        <!-- Registro de Flutter para plugins -->
+75        <meta-data
+76            android:name="flutterEmbedding"
+77            android:value="2" />
+78
+79        <service
+79-->[:firebase_auth] C:\Users\ASUS TUF\Desktop\genesapp\build\firebase_auth\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:9-12:19
+80            android:name="com.google.firebase.components.ComponentDiscoveryService"
+80-->[:firebase_auth] C:\Users\ASUS TUF\Desktop\genesapp\build\firebase_auth\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:18-89
+81            android:directBootAware="true"
+81-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\e6b23c16840c9b1ae58838920f026aa1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+82            android:exported="false" >
+82-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:68:13-37
+83            <meta-data
+83-->[:firebase_auth] C:\Users\ASUS TUF\Desktop\genesapp\build\firebase_auth\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:13-11:85
+84                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+84-->[:firebase_auth] C:\Users\ASUS TUF\Desktop\genesapp\build\firebase_auth\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:17-124
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[:firebase_auth] C:\Users\ASUS TUF\Desktop\genesapp\build\firebase_auth\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:17-82
+86            <meta-data
+86-->[:cloud_firestore] C:\Users\ASUS TUF\Desktop\genesapp\build\cloud_firestore\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:13-11:85
+87                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+87-->[:cloud_firestore] C:\Users\ASUS TUF\Desktop\genesapp\build\cloud_firestore\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:17-134
+88                android:value="com.google.firebase.components.ComponentRegistrar" />
+88-->[:cloud_firestore] C:\Users\ASUS TUF\Desktop\genesapp\build\cloud_firestore\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:17-82
+89            <meta-data
+89-->[:firebase_storage] C:\Users\ASUS TUF\Desktop\genesapp\build\firebase_storage\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:13-11:85
+90                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
+90-->[:firebase_storage] C:\Users\ASUS TUF\Desktop\genesapp\build\firebase_storage\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:17-126
+91                android:value="com.google.firebase.components.ComponentRegistrar" />
+91-->[:firebase_storage] C:\Users\ASUS TUF\Desktop\genesapp\build\firebase_storage\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:17-82
+92            <meta-data
+92-->[:firebase_core] C:\Users\ASUS TUF\Desktop\genesapp\build\firebase_core\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:13-11:85
+93                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+93-->[:firebase_core] C:\Users\ASUS TUF\Desktop\genesapp\build\firebase_core\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:17-124
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[:firebase_core] C:\Users\ASUS TUF\Desktop\genesapp\build\firebase_core\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:17-82
+95            <meta-data
+95-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:69:13-71:85
+96                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+96-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:70:17-109
+97                android:value="com.google.firebase.components.ComponentRegistrar" />
+97-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:71:17-82
+98            <meta-data
+98-->[com.google.firebase:firebase-firestore:25.1.2] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\99f8c7eb9193b3def8b446b80e5a0ef7\transformed\jetified-firebase-firestore-25.1.2\AndroidManifest.xml:17:13-19:85
+99                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+99-->[com.google.firebase:firebase-firestore:25.1.2] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\99f8c7eb9193b3def8b446b80e5a0ef7\transformed\jetified-firebase-firestore-25.1.2\AndroidManifest.xml:18:17-122
+100                android:value="com.google.firebase.components.ComponentRegistrar" />
+100-->[com.google.firebase:firebase-firestore:25.1.2] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\99f8c7eb9193b3def8b446b80e5a0ef7\transformed\jetified-firebase-firestore-25.1.2\AndroidManifest.xml:19:17-82
+101            <meta-data
+101-->[com.google.firebase:firebase-firestore:25.1.2] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\99f8c7eb9193b3def8b446b80e5a0ef7\transformed\jetified-firebase-firestore-25.1.2\AndroidManifest.xml:20:13-22:85
+102                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+102-->[com.google.firebase:firebase-firestore:25.1.2] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\99f8c7eb9193b3def8b446b80e5a0ef7\transformed\jetified-firebase-firestore-25.1.2\AndroidManifest.xml:21:17-111
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[com.google.firebase:firebase-firestore:25.1.2] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\99f8c7eb9193b3def8b446b80e5a0ef7\transformed\jetified-firebase-firestore-25.1.2\AndroidManifest.xml:22:17-82
+104            <meta-data
+104-->[com.google.firebase:firebase-storage:21.0.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\edf700503a0f882de01f08eccc9d3035\transformed\jetified-firebase-storage-21.0.1\AndroidManifest.xml:30:13-32:85
+105                android:name="com.google.firebase.components:com.google.firebase.storage.FirebaseStorageKtxRegistrar"
+105-->[com.google.firebase:firebase-storage:21.0.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\edf700503a0f882de01f08eccc9d3035\transformed\jetified-firebase-storage-21.0.1\AndroidManifest.xml:31:17-118
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[com.google.firebase:firebase-storage:21.0.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\edf700503a0f882de01f08eccc9d3035\transformed\jetified-firebase-storage-21.0.1\AndroidManifest.xml:32:17-82
+107            <meta-data
+107-->[com.google.firebase:firebase-storage:21.0.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\edf700503a0f882de01f08eccc9d3035\transformed\jetified-firebase-storage-21.0.1\AndroidManifest.xml:33:13-35:85
+108                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+108-->[com.google.firebase:firebase-storage:21.0.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\edf700503a0f882de01f08eccc9d3035\transformed\jetified-firebase-storage-21.0.1\AndroidManifest.xml:34:17-107
+109                android:value="com.google.firebase.components.ComponentRegistrar" />
+109-->[com.google.firebase:firebase-storage:21.0.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\edf700503a0f882de01f08eccc9d3035\transformed\jetified-firebase-storage-21.0.1\AndroidManifest.xml:35:17-82
+110            <meta-data
+110-->[com.google.firebase:firebase-appcheck:18.0.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\99d3b4d3b730ff44e4c0967c77be47ac\transformed\jetified-firebase-appcheck-18.0.0\AndroidManifest.xml:25:13-27:85
+111                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckKtxRegistrar"
+111-->[com.google.firebase:firebase-appcheck:18.0.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\99d3b4d3b730ff44e4c0967c77be47ac\transformed\jetified-firebase-appcheck-18.0.0\AndroidManifest.xml:26:17-120
+112                android:value="com.google.firebase.components.ComponentRegistrar" />
+112-->[com.google.firebase:firebase-appcheck:18.0.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\99d3b4d3b730ff44e4c0967c77be47ac\transformed\jetified-firebase-appcheck-18.0.0\AndroidManifest.xml:27:17-82
+113            <meta-data
+113-->[com.google.firebase:firebase-appcheck:18.0.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\99d3b4d3b730ff44e4c0967c77be47ac\transformed\jetified-firebase-appcheck-18.0.0\AndroidManifest.xml:28:13-30:85
+114                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar"
+114-->[com.google.firebase:firebase-appcheck:18.0.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\99d3b4d3b730ff44e4c0967c77be47ac\transformed\jetified-firebase-appcheck-18.0.0\AndroidManifest.xml:29:17-117
+115                android:value="com.google.firebase.components.ComponentRegistrar" />
+115-->[com.google.firebase:firebase-appcheck:18.0.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\99d3b4d3b730ff44e4c0967c77be47ac\transformed\jetified-firebase-appcheck-18.0.0\AndroidManifest.xml:30:17-82
+116            <meta-data
+116-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\67291642d8005ff725f3c1bb1cc8a127\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+117                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+117-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\67291642d8005ff725f3c1bb1cc8a127\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+118                android:value="com.google.firebase.components.ComponentRegistrar" />
+118-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\67291642d8005ff725f3c1bb1cc8a127\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+119            <meta-data
+119-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\e6b23c16840c9b1ae58838920f026aa1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+120                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+120-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\e6b23c16840c9b1ae58838920f026aa1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+121                android:value="com.google.firebase.components.ComponentRegistrar" />
+121-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\e6b23c16840c9b1ae58838920f026aa1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+122        </service>
+123
+124        <activity
+124-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:29:9-46:20
+125            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+125-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:30:13-80
+126            android:excludeFromRecents="true"
+126-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:31:13-46
+127            android:exported="true"
+127-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:32:13-36
+128            android:launchMode="singleTask"
+128-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:33:13-44
+129            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+129-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:34:13-72
+130            <intent-filter>
+130-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:35:13-45:29
+131                <action android:name="android.intent.action.VIEW" />
+131-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:36:17-69
+131-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:36:25-66
+132
+133                <category android:name="android.intent.category.DEFAULT" />
+133-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:38:17-76
+133-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:38:27-73
+134                <category android:name="android.intent.category.BROWSABLE" />
+134-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:39:17-78
+134-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:39:27-75
+135
+136                <data
+136-->C:\Users\ASUS TUF\Desktop\genesapp\android\app\src\main\AndroidManifest.xml:49:13-50
+137                    android:host="firebase.auth"
+138                    android:path="/"
+139                    android:scheme="genericidp" />
+140            </intent-filter>
+141        </activity>
+142        <activity
+142-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:47:9-64:20
+143            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+143-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:48:13-79
+144            android:excludeFromRecents="true"
+144-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:49:13-46
+145            android:exported="true"
+145-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:50:13-36
+146            android:launchMode="singleTask"
+146-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:51:13-44
+147            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+147-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:52:13-72
+148            <intent-filter>
+148-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:53:13-63:29
+149                <action android:name="android.intent.action.VIEW" />
+149-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:36:17-69
+149-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:36:25-66
+150
+151                <category android:name="android.intent.category.DEFAULT" />
+151-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:38:17-76
+151-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:38:27-73
+152                <category android:name="android.intent.category.BROWSABLE" />
+152-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:39:17-78
+152-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\1eaefdf19b3b73b76804909382579cc4\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:39:27-75
+153
+154                <data
+154-->C:\Users\ASUS TUF\Desktop\genesapp\android\app\src\main\AndroidManifest.xml:49:13-50
+155                    android:host="firebase.auth"
+156                    android:path="/"
+157                    android:scheme="recaptcha" />
+158            </intent-filter>
+159        </activity>
+160
+161        <provider
+161-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\e6b23c16840c9b1ae58838920f026aa1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+162            android:name="com.google.firebase.provider.FirebaseInitProvider"
+162-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\e6b23c16840c9b1ae58838920f026aa1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+163            android:authorities="com.example.genesapp.firebaseinitprovider"
+163-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\e6b23c16840c9b1ae58838920f026aa1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+164            android:directBootAware="true"
+164-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\e6b23c16840c9b1ae58838920f026aa1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+165            android:exported="false"
+165-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\e6b23c16840c9b1ae58838920f026aa1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+166            android:initOrder="100" />
+166-->[com.google.firebase:firebase-common:21.0.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\e6b23c16840c9b1ae58838920f026aa1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+167
+168        <uses-library
+168-->[androidx.window:window:1.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\fbcc8b06b4399ee8c0c1934dd229a1eb\transformed\jetified-window-1.2.0\AndroidManifest.xml:23:9-25:40
+169            android:name="androidx.window.extensions"
+169-->[androidx.window:window:1.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\fbcc8b06b4399ee8c0c1934dd229a1eb\transformed\jetified-window-1.2.0\AndroidManifest.xml:24:13-54
+170            android:required="false" />
+170-->[androidx.window:window:1.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\fbcc8b06b4399ee8c0c1934dd229a1eb\transformed\jetified-window-1.2.0\AndroidManifest.xml:25:13-37
+171        <uses-library
+171-->[androidx.window:window:1.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\fbcc8b06b4399ee8c0c1934dd229a1eb\transformed\jetified-window-1.2.0\AndroidManifest.xml:26:9-28:40
+172            android:name="androidx.window.sidecar"
+172-->[androidx.window:window:1.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\fbcc8b06b4399ee8c0c1934dd229a1eb\transformed\jetified-window-1.2.0\AndroidManifest.xml:27:13-51
+173            android:required="false" />
+173-->[androidx.window:window:1.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\fbcc8b06b4399ee8c0c1934dd229a1eb\transformed\jetified-window-1.2.0\AndroidManifest.xml:28:13-37
+174
+175        <service
+175-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\0a966305890ea5ab8fdf96726d1cd0f4\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:24:9-32:19
+176            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+176-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\0a966305890ea5ab8fdf96726d1cd0f4\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:25:13-94
+177            android:enabled="true"
+177-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\0a966305890ea5ab8fdf96726d1cd0f4\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:26:13-35
+178            android:exported="false" >
+178-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\0a966305890ea5ab8fdf96726d1cd0f4\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:27:13-37
+179            <meta-data
+179-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\0a966305890ea5ab8fdf96726d1cd0f4\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:29:13-31:104
+180                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+180-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\0a966305890ea5ab8fdf96726d1cd0f4\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:30:17-76
+181                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+181-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\0a966305890ea5ab8fdf96726d1cd0f4\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:31:17-101
+182        </service>
+183
+184        <activity
+184-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\0a966305890ea5ab8fdf96726d1cd0f4\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:34:9-41:20
+185            android:name="androidx.credentials.playservices.HiddenActivity"
+185-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\0a966305890ea5ab8fdf96726d1cd0f4\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:35:13-76
+186            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+186-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\0a966305890ea5ab8fdf96726d1cd0f4\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:36:13-87
+187            android:enabled="true"
+187-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\0a966305890ea5ab8fdf96726d1cd0f4\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:37:13-35
+188            android:exported="false"
+188-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\0a966305890ea5ab8fdf96726d1cd0f4\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:38:13-37
+189            android:fitsSystemWindows="true"
+189-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\0a966305890ea5ab8fdf96726d1cd0f4\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:39:13-45
+190            android:theme="@style/Theme.Hidden" >
+190-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\0a966305890ea5ab8fdf96726d1cd0f4\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:40:13-48
+191        </activity>
+192        <activity
+192-->[com.google.android.gms:play-services-auth:21.0.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\7d3a147f6a3c4abd589c69c3bcb5f573\transformed\jetified-play-services-auth-21.0.0\AndroidManifest.xml:23:9-27:75
+193            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+193-->[com.google.android.gms:play-services-auth:21.0.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\7d3a147f6a3c4abd589c69c3bcb5f573\transformed\jetified-play-services-auth-21.0.0\AndroidManifest.xml:24:13-93
+194            android:excludeFromRecents="true"
+194-->[com.google.android.gms:play-services-auth:21.0.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\7d3a147f6a3c4abd589c69c3bcb5f573\transformed\jetified-play-services-auth-21.0.0\AndroidManifest.xml:25:13-46
+195            android:exported="false"
+195-->[com.google.android.gms:play-services-auth:21.0.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\7d3a147f6a3c4abd589c69c3bcb5f573\transformed\jetified-play-services-auth-21.0.0\AndroidManifest.xml:26:13-37
+196            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+196-->[com.google.android.gms:play-services-auth:21.0.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\7d3a147f6a3c4abd589c69c3bcb5f573\transformed\jetified-play-services-auth-21.0.0\AndroidManifest.xml:27:13-72
+197        <!--
+198            Service handling Google Sign-In user revocation. For apps that do not integrate with
+199            Google Sign-In, this service will never be started.
+200        -->
+201        <service
+201-->[com.google.android.gms:play-services-auth:21.0.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\7d3a147f6a3c4abd589c69c3bcb5f573\transformed\jetified-play-services-auth-21.0.0\AndroidManifest.xml:33:9-37:51
+202            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+202-->[com.google.android.gms:play-services-auth:21.0.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\7d3a147f6a3c4abd589c69c3bcb5f573\transformed\jetified-play-services-auth-21.0.0\AndroidManifest.xml:34:13-89
+203            android:exported="true"
+203-->[com.google.android.gms:play-services-auth:21.0.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\7d3a147f6a3c4abd589c69c3bcb5f573\transformed\jetified-play-services-auth-21.0.0\AndroidManifest.xml:35:13-36
+204            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+204-->[com.google.android.gms:play-services-auth:21.0.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\7d3a147f6a3c4abd589c69c3bcb5f573\transformed\jetified-play-services-auth-21.0.0\AndroidManifest.xml:36:13-107
+205            android:visibleToInstantApps="true" />
+205-->[com.google.android.gms:play-services-auth:21.0.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\7d3a147f6a3c4abd589c69c3bcb5f573\transformed\jetified-play-services-auth-21.0.0\AndroidManifest.xml:37:13-48
+206
+207        <activity
+207-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\b946efe7919c0a6d386e656329a4f4c3\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+208            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+208-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\b946efe7919c0a6d386e656329a4f4c3\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+209            android:exported="false"
+209-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\b946efe7919c0a6d386e656329a4f4c3\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+210            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+210-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\b946efe7919c0a6d386e656329a4f4c3\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+211
+212        <provider
+212-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\6eb576d0d10310948e02252036716dac\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
+213            android:name="androidx.startup.InitializationProvider"
+213-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\6eb576d0d10310948e02252036716dac\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:25:13-67
+214            android:authorities="com.example.genesapp.androidx-startup"
+214-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\6eb576d0d10310948e02252036716dac\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:26:13-68
+215            android:exported="false" >
+215-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\6eb576d0d10310948e02252036716dac\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:27:13-37
+216            <meta-data
+216-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\6eb576d0d10310948e02252036716dac\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+217                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+217-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\6eb576d0d10310948e02252036716dac\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+218                android:value="androidx.startup" />
+218-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\6eb576d0d10310948e02252036716dac\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+219            <meta-data
+219-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\6e48db806f8ae3f9db57f885230f6678\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+220                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+220-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\6e48db806f8ae3f9db57f885230f6678\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+221                android:value="androidx.startup" />
+221-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\6e48db806f8ae3f9db57f885230f6678\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+222        </provider>
+223
+224        <meta-data
+224-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\3282d2bd45d3b48e1e735ac0b821d604\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
+225            android:name="com.google.android.gms.version"
+225-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\3282d2bd45d3b48e1e735ac0b821d604\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
+226            android:value="@integer/google_play_services_version" />
+226-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\3282d2bd45d3b48e1e735ac0b821d604\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
+227
+228        <receiver
+228-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\6e48db806f8ae3f9db57f885230f6678\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+229            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+229-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\6e48db806f8ae3f9db57f885230f6678\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+230            android:directBootAware="false"
+230-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\6e48db806f8ae3f9db57f885230f6678\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+231            android:enabled="true"
+231-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\6e48db806f8ae3f9db57f885230f6678\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+232            android:exported="true"
+232-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\6e48db806f8ae3f9db57f885230f6678\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+233            android:permission="android.permission.DUMP" >
+233-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\6e48db806f8ae3f9db57f885230f6678\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+234            <intent-filter>
+234-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\6e48db806f8ae3f9db57f885230f6678\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+235                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+235-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\6e48db806f8ae3f9db57f885230f6678\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+235-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\6e48db806f8ae3f9db57f885230f6678\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+236            </intent-filter>
+237            <intent-filter>
+237-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\6e48db806f8ae3f9db57f885230f6678\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+238                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+238-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\6e48db806f8ae3f9db57f885230f6678\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+238-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\6e48db806f8ae3f9db57f885230f6678\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+239            </intent-filter>
+240            <intent-filter>
+240-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\6e48db806f8ae3f9db57f885230f6678\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+241                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+241-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\6e48db806f8ae3f9db57f885230f6678\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+241-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\6e48db806f8ae3f9db57f885230f6678\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+242            </intent-filter>
+243            <intent-filter>
+243-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\6e48db806f8ae3f9db57f885230f6678\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+244                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+244-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\6e48db806f8ae3f9db57f885230f6678\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+244-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\6e48db806f8ae3f9db57f885230f6678\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+245            </intent-filter>
+246        </receiver> <!-- The activities will be merged into the manifest of the hosting app. -->
+247        <activity
+247-->[com.google.android.play:core-common:2.0.3] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\cfc3a7cebd6294c819cf0a950d7406d2\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:14:9-18:65
+248            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+248-->[com.google.android.play:core-common:2.0.3] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\cfc3a7cebd6294c819cf0a950d7406d2\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:15:13-93
+249            android:exported="false"
+249-->[com.google.android.play:core-common:2.0.3] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\cfc3a7cebd6294c819cf0a950d7406d2\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:16:13-37
+250            android:stateNotNeeded="true"
+250-->[com.google.android.play:core-common:2.0.3] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\cfc3a7cebd6294c819cf0a950d7406d2\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:17:13-42
+251            android:theme="@style/Theme.PlayCore.Transparent" />
+251-->[com.google.android.play:core-common:2.0.3] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\cfc3a7cebd6294c819cf0a950d7406d2\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:18:13-62
+252    </application>
+253
+254</manifest>
