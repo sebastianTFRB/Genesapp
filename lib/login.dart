@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:genesapp/usersScreen/screens_guias/guias_screen.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
-import "usersScreen/giasScreen.dart";
 import 'adminScreen/admin.dart';
 import 'medicScreen/medico.dart';
 import 'pacientScreen/paciente.dart';
@@ -171,7 +171,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
     Navigator.pushReplacement(
       context,
-      MaterialPageRoute(builder: (_) => const GiasScreen()),
+      MaterialPageRoute(builder: (_) => const GuiasScreen()),
     );
   }
 

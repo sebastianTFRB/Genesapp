@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:genesapp/usersScreen/giasScreen.dart';
+import 'package:genesapp/usersScreen/screens_guias/guias_screen.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});
@@ -36,7 +36,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
             const SizedBox(height: 10),
             TextField(
               controller: _emailController,
-              decoration: const InputDecoration(labelText: 'Correo electrónico'),
+              decoration: const InputDecoration(
+                labelText: 'Correo electrónico',
+              ),
               keyboardType: TextInputType.emailAddress,
             ),
             const SizedBox(height: 10),
@@ -48,9 +50,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: _loading ? null : _register,
-              child: _loading
-                  ? const CircularProgressIndicator()
-                  : const Text('Registrarme'),
+              child:
+                  _loading
+                      ? const CircularProgressIndicator()
+                      : const Text('Registrarme'),
             ),
             const SizedBox(height: 10),
             if (_error.isNotEmpty)
@@ -84,7 +87,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
         Navigator.pushAndRemoveUntil(
           context,
-          MaterialPageRoute(builder: (_) => const GiasScreen()),
+          MaterialPageRoute(builder: (_) => const GuiasScreen()),
           (Route<dynamic> route) => false,
         );
       }
