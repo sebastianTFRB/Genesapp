@@ -157,13 +157,10 @@
                     android:scheme="recaptcha" />
             </intent-filter>
         </activity>
-
-        <provider
-            android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="com.example.genesapp.firebaseinitprovider"
-            android:directBootAware="true"
+        <activity
+            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
             android:exported="false"
-            android:initOrder="100" />
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
 
         <uses-library
             android:name="androidx.window.extensions"
@@ -203,6 +200,13 @@
             android:exported="true"
             android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
             android:visibleToInstantApps="true" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.example.genesapp.firebaseinitprovider"
+            android:directBootAware="true"
+            android:exported="false"
+            android:initOrder="100" />
 
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"

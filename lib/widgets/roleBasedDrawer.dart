@@ -4,6 +4,7 @@ import 'package:genesapp/adminScreen/admin.dart';
 import 'package:genesapp/adminScreen/adminrequest.dart';
 import 'package:genesapp/medicScreen/articles.dart';
 import 'package:genesapp/medicScreen/medico.dart';
+import 'package:genesapp/medicScreen/viewArticles.dart';
 import 'package:genesapp/pacientScreen/paciente.dart';
 import 'package:genesapp/usersScreen/perfil.dart';
 import 'package:genesapp/login.dart';
@@ -72,6 +73,14 @@ class RoleBasedDrawer extends StatelessWidget {
               onTap: () => Navigator.push(
                 context,
                 MaterialPageRoute(builder: (_) => const SubirArticuloScreen()),
+              ),
+            ),
+            ListTile(
+              leading: const Icon(Icons.feed),
+              title: const Text('publicaciones'),
+              onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => const VerArticulosScreen()),
               ),
             ),
           if (role == 'patient')

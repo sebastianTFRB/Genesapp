@@ -1,41 +1,44 @@
-com.example.genesapp-jetified-credentials-play-services-auth-1.2.0-rc01-0 C:\Users\dalej\.gradle\caches\8.9\transforms\0a966305890ea5ab8fdf96726d1cd0f4\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\res
-com.example.genesapp-browser-1.4.0-1 C:\Users\dalej\.gradle\caches\8.9\transforms\12b094ff02e0c9fc77fa1d067b78700a\transformed\browser-1.4.0\res
-com.example.genesapp-jetified-core-1.0.0-2 C:\Users\dalej\.gradle\caches\8.9\transforms\28b554c8bd91adc151e3720c16d1ef24\transformed\jetified-core-1.0.0\res
-com.example.genesapp-jetified-play-services-basement-18.4.0-3 C:\Users\dalej\.gradle\caches\8.9\transforms\3282d2bd45d3b48e1e735ac0b821d604\transformed\jetified-play-services-basement-18.4.0\res
-com.example.genesapp-jetified-lifecycle-viewmodel-savedstate-2.7.0-4 C:\Users\dalej\.gradle\caches\8.9\transforms\3ba221c7d49ee81a93926ff9bf93849f\transformed\jetified-lifecycle-viewmodel-savedstate-2.7.0\res
-com.example.genesapp-jetified-savedstate-1.2.1-5 C:\Users\dalej\.gradle\caches\8.9\transforms\3e9597a4b8a28016bf6d5436f6407b9f\transformed\jetified-savedstate-1.2.1\res
-com.example.genesapp-jetified-activity-1.8.1-6 C:\Users\dalej\.gradle\caches\8.9\transforms\43519bb8d677d03a4c3c2fab517acd80\transformed\jetified-activity-1.8.1\res
-com.example.genesapp-lifecycle-livedata-core-2.7.0-7 C:\Users\dalej\.gradle\caches\8.9\transforms\601f98d7329771ee76c3f83fef32ea5d\transformed\lifecycle-livedata-core-2.7.0\res
-com.example.genesapp-jetified-profileinstaller-1.3.1-8 C:\Users\dalej\.gradle\caches\8.9\transforms\6e48db806f8ae3f9db57f885230f6678\transformed\jetified-profileinstaller-1.3.1\res
-com.example.genesapp-jetified-lifecycle-process-2.7.0-9 C:\Users\dalej\.gradle\caches\8.9\transforms\6eb576d0d10310948e02252036716dac\transformed\jetified-lifecycle-process-2.7.0\res
-com.example.genesapp-lifecycle-viewmodel-2.7.0-10 C:\Users\dalej\.gradle\caches\8.9\transforms\72cecc4645d2a1a14145784d2a3c8ddd\transformed\lifecycle-viewmodel-2.7.0\res
-com.example.genesapp-jetified-annotation-experimental-1.4.0-11 C:\Users\dalej\.gradle\caches\8.9\transforms\7388e2c233f4b1b245b0b07bb4011faa\transformed\jetified-annotation-experimental-1.4.0\res
-com.example.genesapp-core-runtime-2.2.0-12 C:\Users\dalej\.gradle\caches\8.9\transforms\7707c69aad6ae826c680089480c787a9\transformed\core-runtime-2.2.0\res
-com.example.genesapp-fragment-1.7.1-13 C:\Users\dalej\.gradle\caches\8.9\transforms\78877533527aad4153159ed745052f1d\transformed\fragment-1.7.1\res
-com.example.genesapp-jetified-play-services-auth-21.0.0-14 C:\Users\dalej\.gradle\caches\8.9\transforms\7d3a147f6a3c4abd589c69c3bcb5f573\transformed\jetified-play-services-auth-21.0.0\res
-com.example.genesapp-lifecycle-runtime-2.7.0-15 C:\Users\dalej\.gradle\caches\8.9\transforms\9f2dbfbcc97113dd48c680d2ee6b6e9b\transformed\lifecycle-runtime-2.7.0\res
-com.example.genesapp-core-1.13.1-16 C:\Users\dalej\.gradle\caches\8.9\transforms\a5fbb50faaefa696ca493c882c2b3bd6\transformed\core-1.13.1\res
-com.example.genesapp-jetified-window-java-1.2.0-17 C:\Users\dalej\.gradle\caches\8.9\transforms\b06c27b620802491ceeb24e8d08eead6\transformed\jetified-window-java-1.2.0\res
-com.example.genesapp-jetified-play-services-base-18.1.0-18 C:\Users\dalej\.gradle\caches\8.9\transforms\b946efe7919c0a6d386e656329a4f4c3\transformed\jetified-play-services-base-18.1.0\res
-com.example.genesapp-jetified-core-ktx-1.13.1-19 C:\Users\dalej\.gradle\caches\8.9\transforms\c2ef9b576fa816c28dc662390b6ad85b\transformed\jetified-core-ktx-1.13.1\res
-com.example.genesapp-jetified-startup-runtime-1.1.1-20 C:\Users\dalej\.gradle\caches\8.9\transforms\cb64f3cef6511fceed37e5809a303d5d\transformed\jetified-startup-runtime-1.1.1\res
-com.example.genesapp-jetified-core-common-2.0.3-21 C:\Users\dalej\.gradle\caches\8.9\transforms\cfc3a7cebd6294c819cf0a950d7406d2\transformed\jetified-core-common-2.0.3\res
-com.example.genesapp-jetified-credentials-1.2.0-rc01-22 C:\Users\dalej\.gradle\caches\8.9\transforms\e208aed8ada5198c0101d6965f577ef1\transformed\jetified-credentials-1.2.0-rc01\res
-com.example.genesapp-jetified-firebase-common-21.0.0-23 C:\Users\dalej\.gradle\caches\8.9\transforms\e6b23c16840c9b1ae58838920f026aa1\transformed\jetified-firebase-common-21.0.0\res
-com.example.genesapp-jetified-tracing-1.2.0-24 C:\Users\dalej\.gradle\caches\8.9\transforms\eed6bfdecb2fae57eddc30d63adaa19a\transformed\jetified-tracing-1.2.0\res
-com.example.genesapp-jetified-window-1.2.0-25 C:\Users\dalej\.gradle\caches\8.9\transforms\fbcc8b06b4399ee8c0c1934dd229a1eb\transformed\jetified-window-1.2.0\res
-com.example.genesapp-debug-26 C:\Users\dalej\OneDrive\Escritorio\Genesapp\android\app\src\debug\res
-com.example.genesapp-main-27 C:\Users\dalej\OneDrive\Escritorio\Genesapp\android\app\src\main\res
-com.example.genesapp-pngs-28 C:\Users\dalej\OneDrive\Escritorio\Genesapp\build\app\generated\res\pngs\debug
-com.example.genesapp-resValues-29 C:\Users\dalej\OneDrive\Escritorio\Genesapp\build\app\generated\res\resValues\debug
-com.example.genesapp-packageDebugResources-30 C:\Users\dalej\OneDrive\Escritorio\Genesapp\build\app\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.genesapp-packageDebugResources-31 C:\Users\dalej\OneDrive\Escritorio\Genesapp\build\app\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.genesapp-debug-32 C:\Users\dalej\OneDrive\Escritorio\Genesapp\build\app\intermediates\merged_res\debug\mergeDebugResources
-com.example.genesapp-debug-33 C:\Users\dalej\OneDrive\Escritorio\Genesapp\build\cloud_firestore\intermediates\packaged_res\debug\packageDebugResources
-com.example.genesapp-debug-34 C:\Users\dalej\OneDrive\Escritorio\Genesapp\build\file_picker\intermediates\packaged_res\debug\packageDebugResources
-com.example.genesapp-debug-35 C:\Users\dalej\OneDrive\Escritorio\Genesapp\build\firebase_auth\intermediates\packaged_res\debug\packageDebugResources
-com.example.genesapp-debug-36 C:\Users\dalej\OneDrive\Escritorio\Genesapp\build\firebase_core\intermediates\packaged_res\debug\packageDebugResources
-com.example.genesapp-debug-37 C:\Users\dalej\OneDrive\Escritorio\Genesapp\build\firebase_storage\intermediates\packaged_res\debug\packageDebugResources
-com.example.genesapp-debug-38 C:\Users\dalej\OneDrive\Escritorio\Genesapp\build\flutter_plugin_android_lifecycle\intermediates\packaged_res\debug\packageDebugResources
-com.example.genesapp-debug-39 C:\Users\dalej\OneDrive\Escritorio\Genesapp\build\google_sign_in_android\intermediates\packaged_res\debug\packageDebugResources
-com.example.genesapp-debug-40 C:\Users\dalej\OneDrive\Escritorio\Genesapp\build\permission_handler_android\intermediates\packaged_res\debug\packageDebugResources
+com.example.genesapp-jetified-credentials-play-services-auth-1.2.0-rc01-0 C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\0a966305890ea5ab8fdf96726d1cd0f4\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\res
+com.example.genesapp-jetified-core-1.0.0-1 C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\28b554c8bd91adc151e3720c16d1ef24\transformed\jetified-core-1.0.0\res
+com.example.genesapp-jetified-play-services-basement-18.4.0-2 C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\3282d2bd45d3b48e1e735ac0b821d604\transformed\jetified-play-services-basement-18.4.0\res
+com.example.genesapp-jetified-lifecycle-viewmodel-savedstate-2.7.0-3 C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\3ba221c7d49ee81a93926ff9bf93849f\transformed\jetified-lifecycle-viewmodel-savedstate-2.7.0\res
+com.example.genesapp-jetified-savedstate-1.2.1-4 C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\3e9597a4b8a28016bf6d5436f6407b9f\transformed\jetified-savedstate-1.2.1\res
+com.example.genesapp-jetified-activity-1.8.1-5 C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\43519bb8d677d03a4c3c2fab517acd80\transformed\jetified-activity-1.8.1\res
+com.example.genesapp-lifecycle-livedata-core-2.7.0-6 C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\601f98d7329771ee76c3f83fef32ea5d\transformed\lifecycle-livedata-core-2.7.0\res
+com.example.genesapp-jetified-profileinstaller-1.3.1-7 C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\6e48db806f8ae3f9db57f885230f6678\transformed\jetified-profileinstaller-1.3.1\res
+com.example.genesapp-jetified-lifecycle-process-2.7.0-8 C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\6eb576d0d10310948e02252036716dac\transformed\jetified-lifecycle-process-2.7.0\res
+com.example.genesapp-lifecycle-viewmodel-2.7.0-9 C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\72cecc4645d2a1a14145784d2a3c8ddd\transformed\lifecycle-viewmodel-2.7.0\res
+com.example.genesapp-jetified-annotation-experimental-1.4.0-10 C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\7388e2c233f4b1b245b0b07bb4011faa\transformed\jetified-annotation-experimental-1.4.0\res
+com.example.genesapp-core-runtime-2.2.0-11 C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\7707c69aad6ae826c680089480c787a9\transformed\core-runtime-2.2.0\res
+com.example.genesapp-fragment-1.7.1-12 C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\78877533527aad4153159ed745052f1d\transformed\fragment-1.7.1\res
+com.example.genesapp-jetified-play-services-auth-21.0.0-13 C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\7d3a147f6a3c4abd589c69c3bcb5f573\transformed\jetified-play-services-auth-21.0.0\res
+com.example.genesapp-lifecycle-runtime-2.7.0-14 C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\9f2dbfbcc97113dd48c680d2ee6b6e9b\transformed\lifecycle-runtime-2.7.0\res
+com.example.genesapp-core-1.13.1-15 C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\a5fbb50faaefa696ca493c882c2b3bd6\transformed\core-1.13.1\res
+com.example.genesapp-jetified-window-java-1.2.0-16 C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\b06c27b620802491ceeb24e8d08eead6\transformed\jetified-window-java-1.2.0\res
+com.example.genesapp-jetified-play-services-base-18.1.0-17 C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\b946efe7919c0a6d386e656329a4f4c3\transformed\jetified-play-services-base-18.1.0\res
+com.example.genesapp-jetified-core-ktx-1.13.1-18 C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\c2ef9b576fa816c28dc662390b6ad85b\transformed\jetified-core-ktx-1.13.1\res
+com.example.genesapp-jetified-startup-runtime-1.1.1-19 C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\cb64f3cef6511fceed37e5809a303d5d\transformed\jetified-startup-runtime-1.1.1\res
+com.example.genesapp-jetified-core-common-2.0.3-20 C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\cfc3a7cebd6294c819cf0a950d7406d2\transformed\jetified-core-common-2.0.3\res
+com.example.genesapp-jetified-credentials-1.2.0-rc01-21 C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\e208aed8ada5198c0101d6965f577ef1\transformed\jetified-credentials-1.2.0-rc01\res
+com.example.genesapp-jetified-firebase-common-21.0.0-22 C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\e6b23c16840c9b1ae58838920f026aa1\transformed\jetified-firebase-common-21.0.0\res
+com.example.genesapp-browser-1.8.0-23 C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\ea376816438392d7660b5c89dbbf3d3e\transformed\browser-1.8.0\res
+com.example.genesapp-jetified-tracing-1.2.0-24 C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\eed6bfdecb2fae57eddc30d63adaa19a\transformed\jetified-tracing-1.2.0\res
+com.example.genesapp-jetified-window-1.2.0-25 C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\fbcc8b06b4399ee8c0c1934dd229a1eb\transformed\jetified-window-1.2.0\res
+com.example.genesapp-debug-26 C:\Users\ASUS TUF\Desktop\genesapp\android\app\src\debug\res
+com.example.genesapp-main-27 C:\Users\ASUS TUF\Desktop\genesapp\android\app\src\main\res
+com.example.genesapp-pngs-28 C:\Users\ASUS TUF\Desktop\genesapp\build\app\generated\res\pngs\debug
+com.example.genesapp-resValues-29 C:\Users\ASUS TUF\Desktop\genesapp\build\app\generated\res\resValues\debug
+com.example.genesapp-packageDebugResources-30 C:\Users\ASUS TUF\Desktop\genesapp\build\app\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.genesapp-packageDebugResources-31 C:\Users\ASUS TUF\Desktop\genesapp\build\app\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.genesapp-debug-32 C:\Users\ASUS TUF\Desktop\genesapp\build\app\intermediates\merged_res\debug\mergeDebugResources
+com.example.genesapp-debug-33 C:\Users\ASUS TUF\Desktop\genesapp\build\cloud_firestore\intermediates\packaged_res\debug\packageDebugResources
+com.example.genesapp-debug-34 C:\Users\ASUS TUF\Desktop\genesapp\build\device_info_plus\intermediates\packaged_res\debug\packageDebugResources
+com.example.genesapp-debug-35 C:\Users\ASUS TUF\Desktop\genesapp\build\file_picker\intermediates\packaged_res\debug\packageDebugResources
+com.example.genesapp-debug-36 C:\Users\ASUS TUF\Desktop\genesapp\build\firebase_auth\intermediates\packaged_res\debug\packageDebugResources
+com.example.genesapp-debug-37 C:\Users\ASUS TUF\Desktop\genesapp\build\firebase_core\intermediates\packaged_res\debug\packageDebugResources
+com.example.genesapp-debug-38 C:\Users\ASUS TUF\Desktop\genesapp\build\firebase_storage\intermediates\packaged_res\debug\packageDebugResources
+com.example.genesapp-debug-39 C:\Users\ASUS TUF\Desktop\genesapp\build\flutter_plugin_android_lifecycle\intermediates\packaged_res\debug\packageDebugResources
+com.example.genesapp-debug-40 C:\Users\ASUS TUF\Desktop\genesapp\build\google_sign_in_android\intermediates\packaged_res\debug\packageDebugResources
+com.example.genesapp-debug-41 C:\Users\ASUS TUF\Desktop\genesapp\build\permission_handler_android\intermediates\packaged_res\debug\packageDebugResources
+com.example.genesapp-debug-42 C:\Users\ASUS TUF\Desktop\genesapp\build\syncfusion_flutter_pdfviewer\intermediates\packaged_res\debug\packageDebugResources
+com.example.genesapp-debug-43 C:\Users\ASUS TUF\Desktop\genesapp\build\url_launcher_android\intermediates\packaged_res\debug\packageDebugResources
