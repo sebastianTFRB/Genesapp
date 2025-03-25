@@ -58,7 +58,7 @@ class RoleBasedDrawer extends StatelessWidget {
               },
             ),
           ],
-          if (role == 'doctor')
+          if (role == 'doctor') ...[
             ListTile(
               leading: const Icon(Icons.medical_services),
               title: const Text('Panel de Médico'),
@@ -83,7 +83,8 @@ class RoleBasedDrawer extends StatelessWidget {
                 MaterialPageRoute(builder: (_) => const VerArticulosScreen()),
               ),
             ),
-          if (role == 'patient')
+          ],
+          if (role == 'patient') ...[
             ListTile(
               leading: const Icon(Icons.favorite),
               title: const Text('Panel de Paciente'),
@@ -92,6 +93,7 @@ class RoleBasedDrawer extends StatelessWidget {
                 MaterialPageRoute(builder: (_) => const HomeScreen()),
               ),
             ),
+          ],
           ListTile(
             leading: const Icon(Icons.analytics),
             title: const Text('predictividad williams'),

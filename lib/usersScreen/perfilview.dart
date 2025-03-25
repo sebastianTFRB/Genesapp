@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:genesapp/widgets/custom_app_bar_simple.dart';
 
 class PerfilUsuarioScreen extends StatefulWidget {
   final String uid;
@@ -45,7 +46,10 @@ class _PerfilUsuarioScreenState extends State<PerfilUsuarioScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Perfil del Autor")),
+      appBar: const CustomAppBarSimple(
+        title: "Perfil del autor",
+        color: Colors.blueAccent,
+      ),
       body: isLoading
           ? const Center(child: CircularProgressIndicator())
           : userData == null

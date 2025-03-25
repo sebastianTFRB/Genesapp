@@ -1,7 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:genesapp/medicScreen/visorodf.dart';
-import 'package:genesapp/usersScreen/perfilview.dart'; // Asume que existe esta pantalla
+import 'package:genesapp/usersScreen/perfilview.dart';
+import 'package:genesapp/widgets/custom_app_bar_simple.dart'; // Asume que existe esta pantalla
 
 class VerArticulosScreen extends StatelessWidget {
   const VerArticulosScreen({super.key});
@@ -14,7 +15,11 @@ class VerArticulosScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Artículos Publicados")),
+      appBar: const CustomAppBarSimple(
+              title: "Artículos Publicados",
+              color: Colors.blueAccent,
+            ),
+
       body: StreamBuilder<QuerySnapshot>(
         stream: FirebaseFirestore.instance
             .collection('articulos_medicos')

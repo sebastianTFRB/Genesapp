@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:genesapp/widgets/custom_app_bar_simple.dart';
 
 class AdminVerificationPanel extends StatelessWidget {
   const AdminVerificationPanel({super.key});
@@ -19,7 +20,10 @@ class AdminVerificationPanel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Solicitudes de Verificación Médica")),
+      appBar: const CustomAppBarSimple(
+        title: "Artículos Publicados",
+        color: Colors.blueAccent,
+      ),
       body: StreamBuilder<QuerySnapshot>(
         stream: FirebaseFirestore.instance
             .collection('roleRequests')

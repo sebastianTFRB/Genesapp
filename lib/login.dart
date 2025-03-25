@@ -4,9 +4,7 @@ import 'package:genesapp/usersScreen/screens_guias/guias_screen.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
-import 'adminScreen/admin.dart';
-import 'medicScreen/medico.dart';
-import 'pacientScreen/paciente.dart';
+
 import 'register.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -26,86 +24,127 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[100],
-      body: Center(
-        child: SingleChildScrollView(
-          padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 50),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const FlutterLogo(size: 80),
-              const SizedBox(height: 20),
-              Card(
-                elevation: 8,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-                child: Padding(
-                  padding: const EdgeInsets.all(20),
-                  child: Column(
-                    children: [
-                      const Text('Iniciar Sesión', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
-                      const SizedBox(height: 20),
-                      TextField(
-                        controller: _emailController,
-                        decoration: const InputDecoration(labelText: 'Correo electrónico'),
-                        keyboardType: TextInputType.emailAddress,
+      body: Container(
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            colors: [Color(0xFF43cea2), Color(0xFF185a9d)],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+        ),
+        child: Center(
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 40),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                    width: 100,
+                    height: 100,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(12),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black26,
+                          blurRadius: 8,
+                          offset: Offset(0, 4),
+                        ),
+                      ],
+                      image: const DecorationImage(
+                        image: AssetImage("assets/images/genesappLogo-removebg-preview.png"),
+                        fit: BoxFit.cover,
                       ),
-                      const SizedBox(height: 10),
-                      TextField(
-                        controller: _passwordController,
-                        decoration: const InputDecoration(labelText: 'Contraseña'),
-                        obscureText: true,
-                      ),
-                      const SizedBox(height: 20),
-                      ElevatedButton(
-                        onPressed: _isLoading ? null : _signInWithEmail,
-                        style: ElevatedButton.styleFrom(minimumSize: const Size.fromHeight(45)),
-                        child: _isLoading ? const CircularProgressIndicator() : const Text('Ingresar'),
-                      ),
-                      const SizedBox(height: 10),
-                      SignInButton(
-                        Buttons.Google,
-                        text: "Iniciar sesión con Google",
-                        onPressed: () => _signInWithGoogle(),
-                      ),
-                      
-                      const SizedBox(height: 10),
-                      if (_error.isNotEmpty)
-                        Text(_error, style: const TextStyle(color: Colors.red)),
+                    ),
+                  ),
+                const SizedBox(height: 20),
+                Card(
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                  elevation: 8,
+                  child: Padding(
+                    padding: const EdgeInsets.all(24),
+                    child: Column(
+                      children: [
+                        const Text(
+                          'Bienvenido a GenesApp',
+                          style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                        ),
+                        const SizedBox(height: 20),
+                        TextField(
+                          controller: _emailController,
+                          keyboardType: TextInputType.emailAddress,
+                          decoration: InputDecoration(
+                            prefixIcon: const Icon(Icons.email),
+                            labelText: 'Correo electrónico',
+                            border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
+                          ),
+                        ),
+                        const SizedBox(height: 15),
+                        TextField(
+                          controller: _passwordController,
+                          obscureText: true,
+                          decoration: InputDecoration(
+                            prefixIcon: const Icon(Icons.lock),
+                            labelText: 'Contraseña',
+                            border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
+                          ),
+                        ),
+                        const SizedBox(height: 20),
+                        SizedBox(
+                          width: double.infinity,
+                          child: ElevatedButton(
+                            onPressed: _isLoading ? null : _signInWithEmail,
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: const Color(0xFF185a9d),
+                              padding: const EdgeInsets.symmetric(vertical: 14),
+                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                            ),
+                            child: _isLoading
+                                ? const CircularProgressIndicator(color: Colors.white)
+                                : const Text("Ingresar", style: TextStyle(fontSize: 16)),
+                          ),
+                        ),
+                        const SizedBox(height: 12),
+                        SignInButton(
+                          Buttons.Google,
+                          text: "Iniciar sesión con Google",
+                          onPressed: _signInWithGoogle,
+                        ),
+                        const SizedBox(height: 10),
+                        if (_error.isNotEmpty)
+                          Text(_error, style: const TextStyle(color: Colors.red)),
                         TextButton(
-                        onPressed: () async {
-                          await GoogleSignIn().signOut();
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(content: Text("Listo, ahora puedes elegir otra cuenta")),
-                          );
-                        },
-                        child: const Text("¿Usar otra cuenta de Google?"),
-                      )
-                    ],
-                    
+                          onPressed: () async {
+                            await GoogleSignIn().signOut();
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              const SnackBar(content: Text("Listo, ahora puedes elegir otra cuenta")),
+                            );
+                          },
+                          child: const Text("¿Usar otra cuenta de Google?"),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-              ),
-                          TextButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (_) => const RegisterScreen()),
-                );
-              },
-              child: const Text("¿No tienes cuenta? Regístrate"),
-            )
-
-            ],
+                const SizedBox(height: 16),
+                TextButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (_) => const RegisterScreen()));
+                  },
+                  child: const Text(
+                    "¿No tienes cuenta? Regístrate aquí",
+                    style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
     );
-    
   }
 
   Future<void> _signInWithEmail() async {
     setState(() => _isLoading = true);
-
     try {
       final userCredential = await _auth.signInWithEmailAndPassword(
         email: _emailController.text.trim(),
@@ -121,19 +160,10 @@ class _LoginScreenState extends State<LoginScreen> {
 
   Future<void> _signInWithGoogle() async {
     try {
-      final googleSignIn = GoogleSignIn(
-      scopes: ['email'],
-      // Esto permite que el selector aparezca incluso si ya se ha iniciado sesión previamente
-      signInOption: SignInOption.standard,
-    );
-
-    final googleUser = await googleSignIn.signIn();
-
-    if (googleUser == null) {
-      // El usuario canceló o no eligió cuenta
-      print('No se seleccionó cuenta');
-      return;
-    }
+      final googleUser = await GoogleSignIn(
+        scopes: ['email'],
+        signInOption: SignInOption.standard,
+      ).signIn();
 
       if (googleUser == null) return;
 
@@ -164,8 +194,6 @@ class _LoginScreenState extends State<LoginScreen> {
     }
   }
 
-  
-
   Future<void> _navigateBasedOnRole(User? user) async {
     if (!mounted || user == null) return;
 
@@ -174,10 +202,6 @@ class _LoginScreenState extends State<LoginScreen> {
       MaterialPageRoute(builder: (_) => const GuiasScreen()),
     );
   }
-
-
-  
-
 
   @override
   void dispose() {

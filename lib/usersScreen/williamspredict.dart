@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:genesapp/widgets/custom_app_bar_simple.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
@@ -113,7 +114,10 @@ class WilliamspredictState extends State<Williamspredict> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Formulario de Evaluación Médica")),
+      appBar: const CustomAppBarSimple(
+        title: "predictividad williams",
+        color: Colors.blueAccent,
+      ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Form(
