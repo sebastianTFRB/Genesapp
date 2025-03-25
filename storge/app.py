@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_file
 import os
 from datetime import datetime
 from werkzeug.utils import secure_filename
@@ -29,9 +29,13 @@ def upload_file():
 
     return jsonify({'mensaje': 'Archivo subido correctamente', 'archivo': full_filename}), 200
 
-@app.route('/uploads/<filename>')
+
+
+
+@app.route('/upload/<filename>')
 def descargar_archivo(filename):
-    return send_from_directory('uploads', filename)
+    path_to_file = os.path.join(UPLOAD_FOLDER, filename)
+    return send_file(path_to_file, mimetype='application/pdf', as_attachment=False)
 
 # Ruta raíz para verificar que el servidor funciona
 @app.route('/')
