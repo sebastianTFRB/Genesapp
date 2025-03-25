@@ -83,6 +83,7 @@ MERGED from [:file_picker] C:\Users\ASUS TUF\Desktop\genesapp\build\file_picker\
 MERGED from [:url_launcher_android] C:\Users\ASUS TUF\Desktop\genesapp\build\url_launcher_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-14:12
 MERGED from [:flutter_plugin_android_lifecycle] C:\Users\ASUS TUF\Desktop\genesapp\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-7:12
 MERGED from [:google_sign_in_android] C:\Users\ASUS TUF\Desktop\genesapp\build\google_sign_in_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-9:12
+MERGED from [:path_provider_android] C:\Users\ASUS TUF\Desktop\genesapp\build\path_provider_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-7:12
 MERGED from [:permission_handler_android] C:\Users\ASUS TUF\Desktop\genesapp\build\permission_handler_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.browser:browser:1.8.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\ea376816438392d7660b5c89dbbf3d3e\transformed\browser-1.8.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.window:window:1.2.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\fbcc8b06b4399ee8c0c1934dd229a1eb\transformed\jetified-window-1.2.0\AndroidManifest.xml:17:1-31:12
@@ -217,6 +218,8 @@ MERGED from [:flutter_plugin_android_lifecycle] C:\Users\ASUS TUF\Desktop\genesa
 MERGED from [:flutter_plugin_android_lifecycle] C:\Users\ASUS TUF\Desktop\genesapp\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
 MERGED from [:google_sign_in_android] C:\Users\ASUS TUF\Desktop\genesapp\build\google_sign_in_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
 MERGED from [:google_sign_in_android] C:\Users\ASUS TUF\Desktop\genesapp\build\google_sign_in_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider_android] C:\Users\ASUS TUF\Desktop\genesapp\build\path_provider_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider_android] C:\Users\ASUS TUF\Desktop\genesapp\build\path_provider_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
 MERGED from [:permission_handler_android] C:\Users\ASUS TUF\Desktop\genesapp\build\permission_handler_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
 MERGED from [:permission_handler_android] C:\Users\ASUS TUF\Desktop\genesapp\build\permission_handler_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
 MERGED from [androidx.browser:browser:1.8.0] C:\Users\ASUS TUF\.gradle\caches\8.9\transforms\ea376816438392d7660b5c89dbbf3d3e\transformed\browser-1.8.0\AndroidManifest.xml:5:5-44

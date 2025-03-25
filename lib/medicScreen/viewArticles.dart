@@ -1,19 +1,13 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:genesapp/medicScreen/visorodf.dart';
-import 'package:url_launcher/url_launcher.dart';
+
 
 class VerArticulosScreen extends StatelessWidget {
   const VerArticulosScreen({super.key});
 
-  Future<void> _abrirArchivo(String nombreArchivo) async {
-    final url = 'http://192.168.20.10:5000/uploads/$nombreArchivo';
-    if (await canLaunchUrl(Uri.parse(url))) {
-      await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
-    } else {
-      throw 'No se pudo abrir el archivo: $url';
-    }
-  }
+  
+  
 
   String _formatearFecha(Timestamp timestamp) {
     final fecha = timestamp.toDate();

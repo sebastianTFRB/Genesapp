@@ -37,7 +37,9 @@ class _SubirArticuloScreenState extends State<SubirArticuloScreen> {
       _mensaje = null;
     });
 
-    final uri = Uri.parse('http://192.168.20.10:5000/upload');
+    final uri = Uri.parse('http://10.0.2.2:5000/upload');
+    
+
     final request = http.MultipartRequest('POST', uri);
     request.files.add(await http.MultipartFile.fromPath('file', _archivo!.path));
     request.fields['uid'] = user.uid;
