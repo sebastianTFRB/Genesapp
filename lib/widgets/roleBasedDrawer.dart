@@ -27,97 +27,132 @@ class RoleBasedDrawer extends StatelessWidget {
       (route) => false,
     );
   }
-
   @override
   Widget build(BuildContext context) {
-    return Drawer(
-      child: ListView(
-        padding: EdgeInsets.zero,
-        children: [
-          const DrawerHeader(
-            decoration: BoxDecoration(color: Colors.blue),
-            child: Text('Menú de navegación', style: TextStyle(color: Colors.white, fontSize: 18)),
+  return Drawer(
+    child: ListView(
+      padding: EdgeInsets.zero,
+      children: [
+        Container(
+          height: 140,
+          width: double.infinity,
+          
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Color(0xFF43cea2), Color(0xFF185a9d)],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
           ),
-          if (role == 'admin') ...[
-            ListTile(
-              leading: const Icon(Icons.admin_panel_settings),
-              title: const Text('Panel de Administrador'),
-              onTap: () => Navigator.push(
-                context,
-                MaterialPageRoute(builder: (_) => const AdminScreen()),
-              ),
+          child: Padding(
+            padding: const EdgeInsets.all(30),
+            child: FittedBox(
+              fit: BoxFit.contain,
+              child: Image.asset('assets/images/GenesApp2.png'),
             ),
-            ListTile(
-              leading: const Icon(Icons.verified_user),
-              title: const Text('Panel de Verificación'),
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (_) => const AdminVerificationPanel()),
-                );
-              },
-            ),
-          ],
-          if (role == 'doctor') ...[
-            ListTile(
-              leading: const Icon(Icons.medical_services),
-              title: const Text('Panel de Médico'),
-              onTap: () => Navigator.push(
-                context,
-                MaterialPageRoute(builder: (_) => const DoctorScreen()),
-              ),
-            ),
-            ListTile(
-              leading: const Icon(Icons.article),
-              title: const Text('subir articulo'),
-              onTap: () => Navigator.push(
-                context,
-                MaterialPageRoute(builder: (_) => const SubirArticuloScreen()),
-              ),
-            ),
-            ListTile(
-              leading: const Icon(Icons.feed),
-              title: const Text('publicaciones'),
-              onTap: () => Navigator.push(
-                context,
-                MaterialPageRoute(builder: (_) => const VerArticulosScreen()),
-              ),
-            ),
-          ],
-          if (role == 'patient') ...[
-            ListTile(
-              leading: const Icon(Icons.favorite),
-              title: const Text('Panel de Paciente'),
-              onTap: () => Navigator.push(
-                context,
-                MaterialPageRoute(builder: (_) => const HomeScreen()),
-              ),
-            ),
-          ],
+          ),
+
+        ),
+
+        
+        if (role == 'admin') ...[
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            child: Text('ADMINISTRADOR', style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold, fontSize: 13)),
+          ),
           ListTile(
-            leading: const Icon(Icons.analytics),
-            title: const Text('predictividad williams'),
+            leading: const Icon(Icons.admin_panel_settings, color: Colors.blueAccent),
+            title: const Text('Panel de Administrador'),
             onTap: () => Navigator.push(
               context,
-              MaterialPageRoute(builder: (_) => const Williamspredict()),
-            ),
-          ),
-          const Divider(),
-          ListTile(
-            leading: const Icon(Icons.person),
-            title: const Text('Mi perfil'),
-            onTap: () => Navigator.push(
-              context,
-              MaterialPageRoute(builder: (_) => const ProfileScreen()),
+              MaterialPageRoute(builder: (_) => const AdminScreen()),
             ),
           ),
           ListTile(
-            leading: const Icon(Icons.logout),
-            title: const Text('Cerrar sesión'),
-            onTap: () => _handleLogout(context),
+            leading: const Icon(Icons.verified_user, color: Colors.blueAccent),
+            title: const Text('Panel de Verificación'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => const AdminVerificationPanel()),
+              );
+            },
           ),
         ],
-      ),
-    );
-  }
+        if (role == 'doctor') ...[
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            child: Text('MÉDICO', style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold, fontSize: 13)),
+          ),
+          ListTile(
+            leading: const Icon(Icons.medical_services, color: Colors.teal),
+            title: const Text('Panel de Médico'),
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const DoctorScreen()),
+            ),
+          ),
+          ListTile(
+            leading: const Icon(Icons.article, color: Colors.teal),
+            title: const Text('subir articulo'),
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const SubirArticuloScreen()),
+            ),
+          ),
+          ListTile(
+            leading: const Icon(Icons.feed, color: Colors.teal),
+            title: const Text('publicaciones'),
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const VerArticulosScreen()),
+            ),
+          ),
+        ],
+        if (role == 'patient') ...[
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            child: Text('PACIENTE', style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold, fontSize: 13)),
+          ),
+          ListTile(
+            leading: const Icon(Icons.favorite, color: Colors.pinkAccent),
+            title: const Text('Panel de Paciente'),
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const HomeScreen()),
+            ),
+          ),
+        ],
+        const Padding(
+          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+          child: Text('UTILIDADES', style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold, fontSize: 13)),
+        ),
+        ListTile(
+          leading: const Icon(Icons.analytics, color: Colors.deepPurple),
+          title: const Text('predictividad williams'),
+          onTap: () => Navigator.push(
+            context,
+            MaterialPageRoute(builder: (_) => const Williamspredict()),
+          ),
+        ),
+        const Divider(),
+        ListTile(
+          leading: const Icon(Icons.person, color: Colors.indigo),
+          title: const Text('Mi perfil'),
+          onTap: () => Navigator.push(
+            context,
+            MaterialPageRoute(builder: (_) => const ProfileScreen()),
+          ),
+        ),
+        ListTile(
+          leading: const Icon(Icons.logout, color: Colors.redAccent),
+          title: const Text('Cerrar sesión'),
+          onTap: () => _handleLogout(context),
+        ),
+      ],
+    ),
+  );
 }
+
+}
+  
