@@ -12,12 +12,12 @@ class Williamspredict extends StatefulWidget {
 
 class WilliamspredictState extends State<Williamspredict> {
   final _formKey = GlobalKey<FormState>();
-  final Map<String, dynamic> _formData = {};
+  Map<String, bool> _formData = {};
   String? resultado;
   double? probabilidad;
 
   Future<void> _enviarFormulario() async {
-    const url = 'http://TU_IP_LOCAL:5000/predict'; // Cambia esto por tu IP local
+    const url = 'http://10.162.67.75:5000/predict'; // Cambia esto por tu IP local
     try {
       final response = await http.post(
         Uri.parse(url),
@@ -39,16 +39,20 @@ class WilliamspredictState extends State<Williamspredict> {
     }
   }
 
-  Widget _buildTextField(String label, String keyName) {
-    return TextFormField(
-      decoration: InputDecoration(labelText: label),
-      onSaved: (value) => _formData[keyName] = value ?? '0',
-      validator: (value) => value == null || value.isEmpty ? 'Campo requerido' : null,
-      keyboardType: TextInputType.number,
+  Widget _buildSwitch(String label, String keyName) {
+    return SwitchListTile(
+      title: Text(label),
+      value: _formData[keyName] ?? false,
+      onChanged: (bool value) {
+        setState(() {
+          _formData[keyName] = value;
+        });
+      },
     );
   }
 
   final List<Map<String, String>> campos = [
+    // Añade tus campos aquí
     {'label': 'TALLA/EDAD (ACTUAL)_0', 'key': 'TALLA/EDAD (ACTUAL)_0'},
     {'label': 'TALLA/EDAD (ACTUAL)_Alto', 'key': 'TALLA/EDAD (ACTUAL)_Alto'},
     {'label': 'TALLA/EDAD (ACTUAL)_Bajo', 'key': 'TALLA/EDAD (ACTUAL)_Bajo'},
@@ -115,7 +119,7 @@ class WilliamspredictState extends State<Williamspredict> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const CustomAppBarSimple(
-        title: "predictividad williams",
+        title: "Predictividad Williams",
         color: Colors.blueAccent,
       ),
       body: Padding(
@@ -124,7 +128,7 @@ class WilliamspredictState extends State<Williamspredict> {
           key: _formKey,
           child: ListView(
             children: [
-              ...campos.map((campo) => _buildTextField(campo['label']!, campo['key']!)).toList(),
+              ...campos.map((campo) => _buildSwitch(campo['label']!, campo['key']!)).toList(),
               const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
